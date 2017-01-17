@@ -8,15 +8,17 @@
 
 import UIKit
 
-var categories:Array<String> = ["At home","Outside","With others","Just for me"]
-var items:Dictionary<String,AnyObject> = ["At home":["Self care", "Grooming", "Get your zen on", "Engage your senses", "Let your creative juices flow", "Household stuff", "Future and past fun"],"Outside":["Outside", "Grooming","Health", "Treat", "Exercise"],"With others":["Connect", "Meet with a friend","Romantic fun", "For others"],"Just for me":["Self care", "Grooming", "Get your zen on", "Engage your senses", "Let your creative juices flow", "Household stuff", "Future and past fun"]]
+//var categories:Array<String> = ["At home","Outside","With others","Just for me"]
+//var categories_icon:Array<String> = ["ic_cat_home","ic_cat_outside","ic_cat_withothers","ic_cat_forme"]
 
-var homeItems:Array<String> = ["Self care", "Grooming", "Get your zen on", "Engage your senses", "Let your creative juices flow", "Household stuff", "Future and past fun"]
-var outsideItems:Array<String> = ["Outside", "Grooming","Health", "Treat", "Exercise"]
-var othersItems:Array<String> = ["Connect", "Meet with a friend","Romantic fun", "For others"]
-var forMeItems:Array<String> = ["Self care", "Grooming", "Get your zen on", "Engage your senses", "Let your creative juices flow", "Household stuff", "Future and past fun"]
-var selectedSections:Array<Int> = []
-var itemChosen = ""
+//var items:Dictionary<String,AnyObject> = ["At home":["Self care", "Grooming", "Get your zen on", "Engage your senses", "Let your creative juices flow", "Household stuff", "Future and past fun"],"Outside":["Outside", "Grooming","Health", "Treat", "Exercise"],"With others":["Connect", "Meet with a friend","Romantic fun", "For others"],"Just for me":["Self care", "Grooming", "Get your zen on", "Engage your senses", "Let your creative juices flow", "Household stuff", "Future and past fun"]]
+
+//var homeItems:Array<String> = ["Self care", "Grooming", "Get your zen on", "Engage your senses", "Let your creative juices flow", "Household stuff", "Future and past fun"]
+//var outsideItems:Array<String> = ["Outside", "Grooming","Health", "Treat", "Exercise"]
+//var othersItems:Array<String> = ["Connect", "Meet with a friend","Romantic fun", "For others"]
+//var forMeItems:Array<String> = ["Self care", "Grooming", "Get your zen on", "Engage your senses", "Let your creative juices flow", "Household stuff", "Future and past fun"]
+//var selectedSections:Array<Int> = []
+//var itemChosen = ""
 
 class MainCategoryVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -41,6 +43,15 @@ class MainCategoryVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         btnNext.layer.cornerRadius = (btnNext.frame.height/2)
         btnNext.layer.masksToBounds = true
+        
+        let CategoriesPath:NSString = NSBundle.mainBundle().pathForResource("Category", ofType: "plist")!;
+        Categories = NSArray(contentsOfFile: CategoriesPath as String)! as? [Dictionary<String,AnyObject>] ?? []
+        
+        for Category in Categories {
+            //let chaptername = Category["chapterName"]
+            //let chapterNumber = Category["pageNumber"]
+            print(Category);
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -63,64 +74,62 @@ class MainCategoryVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.navigationController!.popViewControllerAnimated(true)
     }
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return categories.count
-    }
-    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //return items.count
+        return Categories.count
         //return 15
         
         //selectedSections?.contains(section)
-        if selectedSections.contains(section) {
-            //Unselect section
-            let category = categories[section]
-            let subCats = items[category]
-            return 1 + ((subCats?.count) ?? 0)
-        } else {
-            //Expand submenu
-            return 1
-        }
+//        if selectedSections.contains(section) {
+//            //Unselect section
+//            let category = categories[section]
+//            let subCats = items[category]
+//            return 1 + ((subCats?.count) ?? 0)
+//        } else {
+//            //Expand submenu
+//            return 1
+//        }
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        if indexPath.row == 0 {
+//        if indexPath.row == 0 {
             //Main Category
             let cell:CategoryTableViewCell = self.tblCategory.dequeueReusableCellWithIdentifier("CategoryTableViewCell") as! CategoryTableViewCell
             
-            cell.lblCategoryTitle?.text = categories[indexPath.section]
+            cell.lblCategoryTitle?.text = Categories[indexPath.row]["MainCategory"] as? String ?? "-"
             
             cell.imgCategory.backgroundColor = UIColor.grayColor()
             cell.imgCategory.layer.cornerRadius = (cell.imgCategory.frame.width/2)
             cell.imgCategory.layer.masksToBounds = true
             
+            cell.imgCategory.image = UIImage(named:Categories[indexPath.row]["ImageMainCategory"] as? String ?? "ic_cat_placeholder")
+            
             cell.imgStatus.hidden = false
             cell.imgCategory.hidden = false
             
-            if selectedSections.contains(indexPath.section) {
-                UIView.animateWithDuration(0.2, animations: {
-                    cell.imgStatus.transform = CGAffineTransformMakeRotation(CGFloat(M_PI * 2.5));
-                })
-            } else {
-                UIView.animateWithDuration(0.2, animations: {
-                    cell.imgStatus.transform = CGAffineTransformMakeRotation(CGFloat(M_PI * 2.0));
-                })
-            }
-            
+//            if selectedSections.contains(indexPath.section) {
+//                UIView.animateWithDuration(0.2, animations: {
+//                    cell.imgStatus.transform = CGAffineTransformMakeRotation(CGFloat(M_PI * 2.5));
+//                })
+//            } else {
+//                UIView.animateWithDuration(0.2, animations: {
+//                    cell.imgStatus.transform = CGAffineTransformMakeRotation(CGFloat(M_PI * 2.0));
+//                })
+//            }
+        
             return cell
-        } else {
-            //Sub menu
-            let cell:CategoryTableViewCell = self.tblCategory.dequeueReusableCellWithIdentifier("CategoryTableViewCell") as! CategoryTableViewCell
-            
-            let array = items[categories[indexPath.section]] as? Array<String> ?? []
-            cell.lblCategoryTitle?.text = "- \(array[indexPath.row-1])"
-            
-            cell.imgStatus.hidden = true
-            cell.imgCategory.hidden = true
-            
-            return cell
-        }
+//        } else {
+//            //Sub menu
+//            let cell:CategoryTableViewCell = self.tblCategory.dequeueReusableCellWithIdentifier("CategoryTableViewCell") as! CategoryTableViewCell
+//            
+//            let array = items[categories[indexPath.section]] as? Array<String> ?? []
+//            cell.lblCategoryTitle?.text = "- \(array[indexPath.row-1])"
+//            
+//            cell.imgStatus.hidden = true
+//            cell.imgCategory.hidden = true
+//            
+//            return cell
+//        }
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
@@ -130,62 +139,63 @@ class MainCategoryVC: UIViewController, UITableViewDelegate, UITableViewDataSour
 //            return
 //        }
         
-        var currentCell:CategoryTableViewCell?
-        if let indexPath = tableView.indexPathForSelectedRow {
-            currentCell = tableView.cellForRowAtIndexPath(indexPath) as? CategoryTableViewCell
-            print((currentCell?.lblCategoryTitle.text)! as String)
-            
-            if currentCell?.lblCategoryTitle.text == "At home" {
-                itemChosen = "At home"
-            }
-            if currentCell?.lblCategoryTitle.text == "Outside" {
-                itemChosen = "Outside"
-            }
-            if currentCell?.lblCategoryTitle.text == "With others" {
-                itemChosen = "With others"
-            }
-            if currentCell?.lblCategoryTitle.text == "Just for me" {
-                itemChosen = "Just for me"
-            }
-        }
+//        var currentCell:CategoryTableViewCell?
+//        if let indexPath = tableView.indexPathForSelectedRow {
+//            currentCell = tableView.cellForRowAtIndexPath(indexPath) as? CategoryTableViewCell
+//            print((currentCell?.lblCategoryTitle.text)! as String)
+//            
+//            if currentCell?.lblCategoryTitle.text == "At home" {
+//                itemChosen = "At home"
+//            }
+//            if currentCell?.lblCategoryTitle.text == "Outside" {
+//                itemChosen = "Outside"
+//            }
+//            if currentCell?.lblCategoryTitle.text == "With others" {
+//                itemChosen = "With others"
+//            }
+//            if currentCell?.lblCategoryTitle.text == "Just for me" {
+//                itemChosen = "Just for me"
+//            }
+//        }
         
         
-        
-        
-        if selectedSections.contains(indexPath.section) {
-            if indexPath.row == 0 {
-                UIView.animateWithDuration(0.2, animations: {
-                    currentCell?.imgStatus.transform = CGAffineTransformMakeRotation(CGFloat(M_PI * 2.0));
-                })
-                //Unselect section
-                selectedSections.removeAtIndex(selectedSections.indexOf(indexPath.section) ?? 0)
-                //self.tblCategory.reloadData()
-                self.tblCategory.reloadSections(NSIndexSet(index: indexPath.section), withRowAnimation: UITableViewRowAnimation.Fade)
-            } else {
+//        if selectedSections.contains(indexPath.section) {
+//            if indexPath.row == 0 {
+//                UIView.animateWithDuration(0.2, animations: {
+//                    currentCell?.imgStatus.transform = CGAffineTransformMakeRotation(CGFloat(M_PI * 2.0));
+//                })
+//                //Unselect section
+//                selectedSections.removeAtIndex(selectedSections.indexOf(indexPath.section) ?? 0)
+//                //self.tblCategory.reloadData()
+//                self.tblCategory.reloadSections(NSIndexSet(index: indexPath.section), withRowAnimation: UITableViewRowAnimation.Fade)
+//            } else {
                 //Value Selected
-                print(currentCell?.lblCategoryTitle.text)
-                
-                let next = self.storyboard?.instantiateViewControllerWithIdentifier("RateActivitiesVC") as! RateActivitiesVC!
-                self.navigationController?.pushViewController(next, animated: true)
-            }
-        } else {
-            //Expand submenu
-            UIView.animateWithDuration(0.2, animations: {
-                currentCell?.imgStatus.transform = CGAffineTransformMakeRotation(CGFloat(M_PI * 2.5));
-            })
-            
-            if selectedSections.count > 0 {
-                //self.tblCategory.reloadSections(NSIndexSet(index: selectedSections!), withRowAnimation: UITableViewRowAnimation.None)
-                selectedSections.append(indexPath.section)
-                //self.tblCategory.reloadData()
-                self.tblCategory.reloadSections(NSIndexSet(index: indexPath.section), withRowAnimation: UITableViewRowAnimation.Fade)
-                return
-            }
-            
-            selectedSections.append(indexPath.section)
-            //self.tblCategory.reloadData()
-            self.tblCategory.reloadSections(NSIndexSet(index: indexPath.section), withRowAnimation: UITableViewRowAnimation.Fade)
-        }
+                //print(currentCell?.lblCategoryTitle.text)
+        
+        SelectedCategory = Categories[indexPath.row]
+        let next = self.storyboard?.instantiateViewControllerWithIdentifier("SubCategoryVC") as! SubCategoryVC!
+        //next.categories =
+        self.navigationController?.pushViewController(next, animated: true)
+
+//            }
+//        } else {
+//            //Expand submenu
+//            UIView.animateWithDuration(0.2, animations: {
+//                currentCell?.imgStatus.transform = CGAffineTransformMakeRotation(CGFloat(M_PI * 2.5));
+//            })
+//            
+//            if selectedSections.count > 0 {
+//                //self.tblCategory.reloadSections(NSIndexSet(index: selectedSections!), withRowAnimation: UITableViewRowAnimation.None)
+//                selectedSections.append(indexPath.section)
+//                //self.tblCategory.reloadData()
+//                self.tblCategory.reloadSections(NSIndexSet(index: indexPath.section), withRowAnimation: UITableViewRowAnimation.Fade)
+//                return
+//            }
+//            
+//            selectedSections.append(indexPath.section)
+//            //self.tblCategory.reloadData()
+//            self.tblCategory.reloadSections(NSIndexSet(index: indexPath.section), withRowAnimation: UITableViewRowAnimation.Fade)
+//        }
     }
     
 }

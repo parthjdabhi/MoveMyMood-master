@@ -17,6 +17,7 @@ class HowAccomplishVC: UIViewController {
     @IBOutlet weak var btnGotThis: UIButton!
     @IBOutlet var categoryLabel: UILabel!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,7 +27,7 @@ class HowAccomplishVC: UIViewController {
         btnLikely.setCornerRadious(btnUnlikely.frame.height/2)
         btnGotThis.setCornerRadious(btnUnlikely.frame.height/2)
         
-        categoryLabel.text = theNewCategory
+        categoryLabel.text = SelectedSubCategory
     }
 
     override func didReceiveMemoryWarning() {

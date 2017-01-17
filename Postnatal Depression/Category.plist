@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>MainCategory</key>
+		<string>At home</string>
+		<key>ImageMainCategory</key>
+		<string>ic_cat_home</string>
+		<key>SubCategories</key>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>Self care</string>
+				<key>ImageName</key>
+				<string>1Selfcare</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Grooming</string>
+				<key>ImageName</key>
+				<string>2Grooming</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Get your zen on</string>
+				<key>ImageName</key>
+				<string>3Zen</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Engage your senses</string>
+				<key>ImageName</key>
+				<string>4Senses</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Let your creative juices flow</string>
+				<key>ImageName</key>
+				<string>5Creative</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Household stuff</string>
+				<key>ImageName</key>
+				<string>6Household</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Future and past fun</string>
+				<key>ImageName</key>
+				<string>7Future_pastfun</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>MainCategory</key>
+		<string>Outside</string>
+		<key>ImageMainCategory</key>
+		<string>ic_cat_home</string>
+		<key>SubCategories</key>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>Outside</string>
+				<key>ImageName</key>
+				<string>8Outside</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Grooming</string>
+				<key>ImageName</key>
+				<string>2Grooming</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Health</string>
+				<key>ImageName</key>
+				<string>10Health</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Treat</string>
+				<key>ImageName</key>
+				<string>11Treatyourself</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Exercise</string>
+				<key>ImageName</key>
+				<string>12Exercise</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>MainCategory</key>
+		<string>With others</string>
+		<key>ImageMainCategory</key>
+		<string>ic_cat_home</string>
+		<key>SubCategories</key>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>Connect</string>
+				<key>ImageName</key>
+				<string>13Connect</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Meet with a friend</string>
+				<key>ImageName</key>
+				<string>14Meetafriend</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Romantic fun</string>
+				<key>ImageName</key>
+				<string>15Romanticfun</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>For others</string>
+				<key>ImageName</key>
+				<string>16Fortothers</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>MainCategory</key>
+		<string>Just for me</string>
+		<key>ImageMainCategory</key>
+		<string>ic_cat_home</string>
+		<key>SubCategories</key>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>Self care</string>
+				<key>ImageName</key>
+				<string>1Selfcare</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Grooming</string>
+				<key>ImageName</key>
+				<string>2Grooming</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Get your zen on</string>
+				<key>ImageName</key>
+				<string>3Zen</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Engage your senses</string>
+				<key>ImageName</key>
+				<string>4Senses</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Let your creative juices flow</string>
+				<key>ImageName</key>
+				<string>5Creative</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Household stuff</string>
+				<key>ImageName</key>
+				<string>6Household</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Future and past fun</string>
+				<key>ImageName</key>
+				<string>1Selfcare</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

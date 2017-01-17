@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		460348188DA2348AF6EC2830 /* Pods_Postnatal_Depression.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A3AF8FDB51DA0E9D2E8AD38 /* Pods_Postnatal_Depression.framework */; };
+		5E11115F1E2DDE5200DD86DC /* SubCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E11115E1E2DDE5200DD86DC /* SubCategoryVC.swift */; };
 		5E1BB5031E040D9C005B933F /* NormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E1BB5011E040D9C005B933F /* NormalCell.xib */; };
 		5E1BB5041E040D9C005B933F /* ValuePickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E1BB5021E040D9C005B933F /* ValuePickerCell.xib */; };
 		5E1BB5061E040DA6005B933F /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1BB5051E040DA6005B933F /* CustomCell.swift */; };
@@ -31,6 +32,7 @@
 		5ED4806D1E1A5FFA00C3FE15 /* CongratsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED4806C1E1A5FFA00C3FE15 /* CongratsVC.swift */; };
 		5ED480701E1A6D9400C3FE15 /* GlobalUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED4806F1E1A6D9400C3FE15 /* GlobalUtils.swift */; };
 		5ED480721E1A74D700C3FE15 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED480711E1A74D700C3FE15 /* Extensions.swift */; };
+		5EDF26611E2DCEA800D985DA /* Category.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5EDF26601E2DCEA800D985DA /* Category.plist */; };
 		DA4E88FC1E257B7A00137796 /* AlertTitleOnlyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4E88F61E257B7A00137796 /* AlertTitleOnlyVC.swift */; };
 		DA4E88FD1E257B7A00137796 /* AlertTitleOnlyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA4E88F71E257B7A00137796 /* AlertTitleOnlyVC.xib */; };
 		DA4E88FE1E257B7A00137796 /* AlertSubtitleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4E88F81E257B7A00137796 /* AlertSubtitleVC.swift */; };
@@ -107,6 +109,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E11115E1E2DDE5200DD86DC /* SubCategoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubCategoryVC.swift; sourceTree = "<group>"; };
 		5E1BB5011E040D9C005B933F /* NormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NormalCell.xib; sourceTree = "<group>"; };
 		5E1BB5021E040D9C005B933F /* ValuePickerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ValuePickerCell.xib; sourceTree = "<group>"; };
 		5E1BB5051E040DA6005B933F /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
@@ -130,6 +133,7 @@
 		5ED4806C1E1A5FFA00C3FE15 /* CongratsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CongratsVC.swift; sourceTree = "<group>"; };
 		5ED4806F1E1A6D9400C3FE15 /* GlobalUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalUtils.swift; sourceTree = "<group>"; };
 		5ED480711E1A74D700C3FE15 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		5EDF26601E2DCEA800D985DA /* Category.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Category.plist; sourceTree = "<group>"; };
 		6A3AF8FDB51DA0E9D2E8AD38 /* Pods_Postnatal_Depression.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Postnatal_Depression.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB666033EA2DD32334F3FA6C /* Pods-Postnatal Depression.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Postnatal Depression.release.xcconfig"; path = "Pods/Target Support Files/Pods-Postnatal Depression/Pods-Postnatal Depression.release.xcconfig"; sourceTree = "<group>"; };
 		DA4E88F61E257B7A00137796 /* AlertTitleOnlyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertTitleOnlyVC.swift; sourceTree = "<group>"; };
@@ -245,6 +249,7 @@
 			children = (
 				5E6CD5C21E02C0D900730CD0 /* Tableview Cell */,
 				5E6CD5BE1E02B50D00730CD0 /* MainCategoryVC.swift */,
+				5E11115E1E2DDE5200DD86DC /* SubCategoryVC.swift */,
 				5E58EC891E05544400AF3ADC /* RateActivitiesVC.swift */,
 				5E84FC591E1BE00000AFF73B /* ListActivityRatesVC.swift */,
 				5E84FC5E1E1BEA2000AFF73B /* AccomplishUnlikelyVC.swift */,
@@ -337,6 +342,7 @@
 				5ED480631E1A5F0B00C3FE15 /* Local Notification - Part3 */,
 				DA7C7A821E01199D00F2DC7C /* Scores */,
 				DA7C7A5C1E010B0000F2DC7C /* ReminderViewController.swift */,
+				5EDF26601E2DCEA800D985DA /* Category.plist */,
 				DA7C7A601E010C5B00F2DC7C /* ReminderNextViewController.swift */,
 				5E6472751E0BE9DD00FBF049 /* ActivityLandingVC.swift */,
 				DA7C7A1C1E00DBC400F2DC7C /* Main.storyboard */,
@@ -560,6 +566,7 @@
 				DA4E89151E2CA97A00137796 /* Questionaire4.png in Resources */,
 				DA7C7A231E00DBC400F2DC7C /* Assets.xcassets in Resources */,
 				DA7C7A651E010CF000F2DC7C /* NextButton.png in Resources */,
+				5EDF26611E2DCEA800D985DA /* Category.plist in Resources */,
 				DA4E89171E2CA97A00137796 /* Questionaire2.png in Resources */,
 				DA7C7A841E011C7800F2DC7C /* GreyButton.png in Resources */,
 				DA7C7A691E0111CA00F2DC7C /* LicenseBackground.png in Resources */,
@@ -676,6 +683,7 @@
 				DA7C7A711E01195000F2DC7C /* ScoreQuestion2ViewController.swift in Sources */,
 				5E6CD5C41E02C11400730CD0 /* CategoryTableViewCell.swift in Sources */,
 				5E58EC8A1E05544400AF3ADC /* RateActivitiesVC.swift in Sources */,
+				5E11115F1E2DDE5200DD86DC /* SubCategoryVC.swift in Sources */,
 				5EAEB4B81E1D173C00766836 /* SomewhatLikelyVC.swift in Sources */,
 				5ED480721E1A74D700C3FE15 /* Extensions.swift in Sources */,
 				5E84FC5F1E1BEA2000AFF73B /* AccomplishUnlikelyVC.swift in Sources */,

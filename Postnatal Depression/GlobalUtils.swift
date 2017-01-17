@@ -15,6 +15,10 @@ var alertBeforeStartDate:String?
 var endDate:NSDate?
 var alertBeforeEndDate:String?
 
+// Categories Data
+var Categories:[Dictionary<String,AnyObject>] = []
+var SelectedCategory:Dictionary<String,AnyObject> = [:]
+var SelectedSubCategory:String?
 
 
 // // MARK: - Methods

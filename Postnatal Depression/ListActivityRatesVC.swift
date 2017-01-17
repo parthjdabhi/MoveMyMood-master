@@ -8,16 +8,18 @@
 
 import UIKit
 
-var newItemArray:Array<String> = []
-var theNewCategory = ""
-var theCategory:Array<String> = []
+//var newItemArray:Array<String> = []
+//var theNewCategory = ""
+//var theCategory:Array<String> = []
 
 class ListActivityRatesVC: UIViewController {
     
     @IBOutlet weak var tblRates: UITableView!
     @IBOutlet weak var btnSheduleAnActivity: UIButton!
     
-    var categories:Array<String> = ["Nap","Watch a movie","Read a book","Make a good meal"]
+    //var categories:Array<String> = ["Nap","Watch a movie","Read a book","Make a good meal"]
+    
+    var SubCategories:Array<Dictionary<String,AnyObject>> = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,18 +31,8 @@ class ListActivityRatesVC: UIViewController {
         
         tblRates.scrollEnabled = false
         
-        if itemChosen == "At home" {
-            theCategory = homeItems
-        }
-        if itemChosen == "Outside" {
-            theCategory = outsideItems
-        }
-        if itemChosen == "With others" {
-            theCategory = othersItems
-        }
-        if itemChosen == "Just for me" {
-            theCategory = forMeItems
-        }
+        SubCategories = SelectedCategory["SubCategories"] as? [Dictionary<String,AnyObject>] ?? []
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -73,7 +65,7 @@ class ListActivityRatesVC: UIViewController {
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return theCategory.count
+        return SubCategories.count
         //return 15
     }
     
@@ -82,9 +74,11 @@ class ListActivityRatesVC: UIViewController {
         //Main Category
         let cell:RateListTableViewCell = self.tblRates.dequeueReusableCellWithIdentifier("RateListTableViewCell") as! RateListTableViewCell
         
-        cell.lblCategoryTitle?.text = theCategory[indexPath.row]
+        cell.lblCategoryTitle?.text = SubCategories[indexPath.row]["Title"] as? String ?? "-"
+        
         cell.vRate?.tintColor = UIColor(red: 241/255.0, green: 196/255.0, blue: 15/255.0, alpha: 1)
         cell.vRate?.value = 3
+        //ImageName
         
         return cell
     }
@@ -94,10 +88,9 @@ class ListActivityRatesVC: UIViewController {
         var currentCell:RateListTableViewCell?
         if let indexPath = tableView.indexPathForSelectedRow {
             currentCell = tableView.cellForRowAtIndexPath(indexPath) as? RateListTableViewCell
-            theNewCategory = (currentCell?.lblCategoryTitle!.text)!
+            SelectedSubCategory = (currentCell?.lblCategoryTitle!.text)
             
-        
-        self.tblRates.deselectRowAtIndexPath(indexPath, animated: true)
+            self.tblRates.deselectRowAtIndexPath(indexPath, animated: true)
         }
         
     }
