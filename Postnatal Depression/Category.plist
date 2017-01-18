@@ -57,7 +57,7 @@
 		<key>MainCategory</key>
 		<string>Outside</string>
 		<key>ImageMainCategory</key>
-		<string>ic_cat_home</string>
+		<string>ic_cat_outside</string>
 		<key>SubCategories</key>
 		<array>
 			<dict>
@@ -96,7 +96,7 @@
 		<key>MainCategory</key>
 		<string>With others</string>
 		<key>ImageMainCategory</key>
-		<string>ic_cat_home</string>
+		<string>ic_cat_withothers</string>
 		<key>SubCategories</key>
 		<array>
 			<dict>
@@ -129,7 +129,7 @@
 		<key>MainCategory</key>
 		<string>Just for me</string>
 		<key>ImageMainCategory</key>
-		<string>ic_cat_home</string>
+		<string>ic_cat_forme</string>
 		<key>SubCategories</key>
 		<array>
 			<dict>
