@@ -49,22 +49,23 @@ class CongratsVC: UIViewController {
         //"checkin to shedule another activities"
         
         let notification = UILocalNotification()
-        notification.fireDate = NSDate(timeIntervalSinceNow: 10)
-        //notification.fireDate = startDate t
-        notification.alertBody = "it's almost time for some self care"
+        //notification.fireDate = NSDate(timeIntervalSinceNow: 10)
+        notification.fireDate = startDate
+        notification.alertBody = "it's almost time for some \((SelectedSubCategory ?? "-")!)"
         notification.alertAction = "StartActivity"
         notification.soundName = UILocalNotificationDefaultSoundName
-        notification.userInfo = ["RemiderType": "StartActivity", "UUID": "reminderID"]
+        notification.userInfo = ["RemiderType": "StartActivity", "UUID": "reminderID", "SelectedSubCategory": SelectedSubCategory ?? "-"]
         UIApplication.sharedApplication().scheduleLocalNotification(notification)
         
+        
         let endANotification = UILocalNotification()
-        endANotification.fireDate = NSDate(timeIntervalSinceNow: 20)
-        //endANotification.fireDate = endDate
-        endANotification.alertBody = "checkin to shedule another activities"
+        //endANotification.fireDate = NSDate(timeIntervalSinceNow: 20)
+        endANotification.fireDate = endDate
+        endANotification.alertBody = "Activity Finished (\((SelectedSubCategory ?? "-")!)) : checkin to shedule another activities"
         endANotification.alertAction = "EndActivity"
         endANotification.soundName = UILocalNotificationDefaultSoundName
-        endANotification.userInfo = ["RemiderType": "EndActivity", "UUID": "reminderID"]
-        //UIApplication.sharedApplication().scheduleLocalNotification(endANotification)
+        endANotification.userInfo = ["RemiderType": "EndActivity", "UUID": "reminderID", "SelectedSubCategory": SelectedSubCategory ?? "-"]
+        UIApplication.sharedApplication().scheduleLocalNotification(endANotification)
         
         
         guard let settings = UIApplication.sharedApplication().currentUserNotificationSettings() else { return }
@@ -76,7 +77,8 @@ class CongratsVC: UIViewController {
             return
         }
         
-        let next = self.storyboard?.instantiateViewControllerWithIdentifier("ScoreQuestion2ViewController") as! ScoreQuestion2ViewController!
+        let next = self.storyboard?.instantiateViewControllerWithIdentifier("ListActivityRatesVC") as! ListActivityRatesVC!
+        //let next = self.storyboard?.instantiateViewControllerWithIdentifier("ScoreQuestion2ViewController") as! ScoreQuestion2ViewController!
         self.navigationController?.pushViewController(next, animated: true)
     }
     

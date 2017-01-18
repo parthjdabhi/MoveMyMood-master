@@ -29,7 +29,7 @@ class SelectAEndTimeVC: UIViewController, IQDropDownTextFieldDelegate {
         txtEndDate?.dropDownMode = IQDropDownMode.DateTimePicker
         txtEndDate?.setDate(startDate?.addMinutes(30), animated: true)
         txtEndDate?.minimumDate = startDate?.addMinutes(30)
-        endDate = startDate?.addMinutes(30)
+        endDate = startDate?.addMinutes(10)
         
         
         txtalertBeforeEndDate?.setLeftMargin(8)

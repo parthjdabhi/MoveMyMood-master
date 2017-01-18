@@ -117,6 +117,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             //            }
         }
         
+        //["RemiderType": "EndActivity", "UUID": "reminderID", "SelectedSubCategory": SelectedSubCategory ?? "-"]
+        
+        if let RemiderType = notification.userInfo?["RemiderType"] as? String,
+            SSubCategory = notification.userInfo?["SelectedSubCategory"] as? String
+            where RemiderType == "EndActivity"
+        {
+            SelectedSubCategory = SSubCategory
+        } else {
+            return
+        }
+        
+        
         let alertVC = AlertTitleOnlyVC(nibName: "AlertTitleOnlyVC", bundle: nil, alertTitle: "Activity completed?", Button1Name: "Nailed it.", Button2name: "I didn't get to it.")
         
         //alertVC.lblSubTitle.removeFromSuperview()

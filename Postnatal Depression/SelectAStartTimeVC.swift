@@ -29,7 +29,7 @@ class SelectAStartTimeVC: UIViewController, IQDropDownTextFieldDelegate {
         txtStartDate?.isOptionalDropDown = false
         txtStartDate?.dropDownMode = IQDropDownMode.DateTimePicker
         txtStartDate?.setDate(NSDate().addHours(2), animated: true)
-        startDate = NSDate().addHours(2)
+        startDate = NSDate().addMinutes(5) //.addHours(2)
         
         txtalertBeforeStartDate?.setLeftMargin(8)
         txtalertBeforeStartDate?.setCornerRadious(4)
