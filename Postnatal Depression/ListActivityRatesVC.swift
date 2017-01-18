@@ -65,7 +65,8 @@ class ListActivityRatesVC: UIViewController {
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return SubCategories.count
+        return 1
+        //return SubCategories.count
         //return 15
     }
     
@@ -74,10 +75,13 @@ class ListActivityRatesVC: UIViewController {
         //Main Category
         let cell:RateListTableViewCell = self.tblRates.dequeueReusableCellWithIdentifier("RateListTableViewCell") as! RateListTableViewCell
         
-        cell.lblCategoryTitle?.text = SubCategories[indexPath.row]["Title"] as? String ?? "-"
-        
+        cell.lblCategoryTitle?.text = SelectedSubCategory ?? "-"
         cell.vRate?.tintColor = UIColor(red: 241/255.0, green: 196/255.0, blue: 15/255.0, alpha: 1)
-        cell.vRate?.value = 3
+        cell.vRate?.value = 4
+        
+        //cell.lblCategoryTitle?.text = SubCategories[indexPath.row]["Title"] as? String ?? "-"
+        //cell.vRate?.tintColor = UIColor(red: 241/255.0, green: 196/255.0, blue: 15/255.0, alpha: 1)
+        //cell.vRate?.value = 3
         //ImageName
         
         return cell

@@ -250,10 +250,10 @@
 				5E6CD5C21E02C0D900730CD0 /* Tableview Cell */,
 				5E6CD5BE1E02B50D00730CD0 /* MainCategoryVC.swift */,
 				5E11115E1E2DDE5200DD86DC /* SubCategoryVC.swift */,
-				5E58EC891E05544400AF3ADC /* RateActivitiesVC.swift */,
 				5E84FC591E1BE00000AFF73B /* ListActivityRatesVC.swift */,
 				5E84FC5E1E1BEA2000AFF73B /* AccomplishUnlikelyVC.swift */,
 				5EAEB4B71E1D173C00766836 /* SomewhatLikelyVC.swift */,
+				5E58EC891E05544400AF3ADC /* RateActivitiesVC.swift */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
