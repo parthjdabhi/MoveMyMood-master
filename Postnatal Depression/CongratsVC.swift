@@ -67,7 +67,6 @@ class CongratsVC: UIViewController {
         endANotification.userInfo = ["RemiderType": "EndActivity", "UUID": "reminderID", "SelectedSubCategory": SelectedSubCategory ?? "-"]
         UIApplication.sharedApplication().scheduleLocalNotification(endANotification)
         
-        
         guard let settings = UIApplication.sharedApplication().currentUserNotificationSettings() else { return }
         
         if settings.types == .None {
@@ -81,5 +80,4 @@ class CongratsVC: UIViewController {
         //let next = self.storyboard?.instantiateViewControllerWithIdentifier("ScoreQuestion2ViewController") as! ScoreQuestion2ViewController!
         self.navigationController?.pushViewController(next, animated: true)
     }
-    
 }
