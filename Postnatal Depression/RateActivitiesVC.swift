@@ -49,7 +49,7 @@ class RateActivitiesVC: UIViewController {
         //self.navigationController!.popViewControllerAnimated(true)
         
         //For test Going to How likely to accomplish screen
-        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("ListActivityRatesVC") as? ListActivityRatesVC
+        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("MyActivityListVC") as? MyActivityListVC
         self.navigationController?.pushViewController(vc!, animated: true)
         
     }
@@ -65,7 +65,7 @@ class RateActivitiesVC: UIViewController {
         //Main Category
         let cell:RateTableViewCell = self.tblRates.dequeueReusableCellWithIdentifier("RateTableViewCell") as! RateTableViewCell
         
-        cell.lblCategoryTitle?.text = SelectedSubCategory ?? "-"
+        cell.lblCategoryTitle?.text = SelectedSubSubCategoryTitle ?? "-"
         cell.vRate?.tintColor = UIColor(red: 241/255.0, green: 196/255.0, blue: 15/255.0, alpha: 1)
         cell.vRate?.value = 4
         

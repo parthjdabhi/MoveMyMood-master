@@ -12,7 +12,7 @@ import UIKit
 //var theNewCategory = ""
 //var theCategory:Array<String> = []
 
-class ListActivityRatesVC: UIViewController {
+class  MyActivityListVC: UIViewController {
     
     @IBOutlet weak var tblRates: UITableView!
     @IBOutlet weak var btnSheduleAnActivity: UIButton!
@@ -75,7 +75,7 @@ class ListActivityRatesVC: UIViewController {
         //Main Category
         let cell:RateListTableViewCell = self.tblRates.dequeueReusableCellWithIdentifier("RateListTableViewCell") as! RateListTableViewCell
         
-        cell.lblCategoryTitle?.text = SelectedSubCategory ?? "-"
+        cell.lblCategoryTitle?.text = SelectedSubSubCategoryTitle ?? "-"
         cell.vRate?.tintColor = UIColor(red: 241/255.0, green: 196/255.0, blue: 15/255.0, alpha: 1)
         cell.vRate?.value = 4
         
@@ -92,7 +92,7 @@ class ListActivityRatesVC: UIViewController {
         var currentCell:RateListTableViewCell?
         if let indexPath = tableView.indexPathForSelectedRow {
             currentCell = tableView.cellForRowAtIndexPath(indexPath) as? RateListTableViewCell
-            SelectedSubCategory = (currentCell?.lblCategoryTitle!.text)
+            SelectedSubSubCategoryTitle = (currentCell?.lblCategoryTitle!.text)
             
             self.tblRates.deselectRowAtIndexPath(indexPath, animated: true)
         }

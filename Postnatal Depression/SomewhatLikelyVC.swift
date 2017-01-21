@@ -70,7 +70,7 @@ class SomewhatLikelyVC: UIViewController, IQDropDownTextFieldDelegate {
     @IBAction func actionEasierActivityButton(sender: AnyObject) {
         //self.navigationController!.popViewControllerAnimated(true)
         
-        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("ListActivityRatesVC") as? ListActivityRatesVC
+        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("MyActivityListVC") as? MyActivityListVC
         self.navigationController?.pushViewController(vc!, animated: true)
         
     }

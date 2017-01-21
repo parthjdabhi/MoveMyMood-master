@@ -18,7 +18,12 @@ var alertBeforeEndDate:String?
 // Categories Data
 var Categories:[Dictionary<String,AnyObject>] = []
 var SelectedCategory:Dictionary<String,AnyObject> = [:]
-var SelectedSubCategory:String?
+var SelectedSubCategory:Dictionary<String,AnyObject> = [:]
+
+//Slected Titles
+var SelectedCategoryTitle:String?
+var SelectedSubCategoryTitle:String?
+var SelectedSubSubCategoryTitle:String?
 
 
 // // MARK: - Methods

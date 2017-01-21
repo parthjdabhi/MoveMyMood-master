@@ -123,7 +123,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             SSubCategory = notification.userInfo?["SelectedSubCategory"] as? String
             where RemiderType == "EndActivity"
         {
-            SelectedSubCategory = SSubCategory
+            SelectedSubSubCategoryTitle = SSubCategory
         } else {
             return
         }
@@ -160,7 +160,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 alertVC.actionBtn2Tapped = {
                     print("You tapped button2")
                     popup.dismiss({
-                        let vc = self.storyBoard?.instantiateViewControllerWithIdentifier("ListActivityRatesVC") as? ListActivityRatesVC
+                        let vc = self.storyBoard?.instantiateViewControllerWithIdentifier("MyActivityListVC") as? MyActivityListVC
                         UIApplication.topViewController()?.navigationController?.pushViewController(vc!, animated: true)
                     })
                 }
@@ -183,7 +183,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     ratingVC.submitAction = {
                         print("You rated \(ratingVC.ratingView.value) stars")
                         popup.dismiss({
-                            let vc = self.storyBoard?.instantiateViewControllerWithIdentifier("ListActivityRatesVC") as? ListActivityRatesVC
+                            let vc = self.storyBoard?.instantiateViewControllerWithIdentifier("MyActivityListVC") as? MyActivityListVC
                             UIApplication.topViewController()?.navigationController?.pushViewController(vc!, animated: true)
                         })
                     }

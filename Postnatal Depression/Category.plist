@@ -14,42 +14,261 @@
 				<string>Self care</string>
 				<key>ImageName</key>
 				<string>1Selfcare</string>
+				<key>SubSubCategories</key>
+				<array>
+					<dict>
+						<key>Title</key>
+						<string>Make a piece of artwork</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Prepare a meal</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Rearrange all of your furniture</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Paint your nails a fun color</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Read a religious text</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+				</array>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Grooming</string>
 				<key>ImageName</key>
 				<string>2Grooming</string>
+				<key>SubSubCategories</key>
+				<array>
+					<dict>
+						<key>Title</key>
+						<string>Shaving</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Mouth Care</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Dressing</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Hair Care</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+				</array>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Get your zen on</string>
 				<key>ImageName</key>
 				<string>3Zen</string>
+				<key>SubSubCategories</key>
+				<array>
+					<dict>
+						<key>Title</key>
+						<string>Laugh</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>make balance your goal</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 3</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 4</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 5</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+				</array>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Engage your senses</string>
 				<key>ImageName</key>
 				<string>4Senses</string>
+				<key>SubSubCategories</key>
+				<array>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 1</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 2</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 3</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 5</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+				</array>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Let your creative juices flow</string>
 				<key>ImageName</key>
 				<string>5Creative</string>
+				<key>SubSubCategories</key>
+				<array>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 1</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 2</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 3</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 4</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 5</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+				</array>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Household stuff</string>
 				<key>ImageName</key>
 				<string>6Household</string>
+				<key>SubSubCategories</key>
+				<array>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 1</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 2</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 3</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 4</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 5</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+				</array>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Future and past fun</string>
 				<key>ImageName</key>
 				<string>7Future_pastfun</string>
+				<key>SubSubCategories</key>
+				<array>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 1</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 2</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 3</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 4</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 5</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+				</array>
 			</dict>
 		</array>
 	</dict>
@@ -65,30 +284,195 @@
 				<string>Outside</string>
 				<key>ImageName</key>
 				<string>8Outside</string>
+				<key>SubSubCategories</key>
+				<array>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 1</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 2</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 3</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 4</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 5</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+				</array>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Grooming</string>
 				<key>ImageName</key>
 				<string>2Grooming</string>
+				<key>SubSubCategories</key>
+				<array>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 1</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 2</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 3</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 4</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 5</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+				</array>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Health</string>
 				<key>ImageName</key>
 				<string>10Health</string>
+				<key>SubSubCategories</key>
+				<array>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 1</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 2</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 3</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 4</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 5</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+				</array>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Treat</string>
 				<key>ImageName</key>
 				<string>11Treatyourself</string>
+				<key>SubSubCategories</key>
+				<array>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 1</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 2</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 3</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 4</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 5</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+				</array>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Exercise</string>
 				<key>ImageName</key>
 				<string>12Exercise</string>
+				<key>SubSubCategories</key>
+				<array>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 1</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 2</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 3</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 4</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 5</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+				</array>
 			</dict>
 		</array>
 	</dict>
@@ -104,24 +488,156 @@
 				<string>Connect</string>
 				<key>ImageName</key>
 				<string>13Connect</string>
+				<key>SubSubCategories</key>
+				<array>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 1</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 2</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 3</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 4</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 5</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+				</array>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Meet with a friend</string>
 				<key>ImageName</key>
 				<string>14Meetafriend</string>
+				<key>SubSubCategories</key>
+				<array>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 1</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 2</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 3</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 4</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 5</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+				</array>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Romantic fun</string>
 				<key>ImageName</key>
 				<string>15Romanticfun</string>
+				<key>SubSubCategories</key>
+				<array>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 1</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 2</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 3</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 4</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 5</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+				</array>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>For others</string>
 				<key>ImageName</key>
 				<string>16Fortothers</string>
+				<key>SubSubCategories</key>
+				<array>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 1</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 2</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 3</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 4</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 5</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+				</array>
 			</dict>
 		</array>
 	</dict>
@@ -137,42 +653,273 @@
 				<string>Self care</string>
 				<key>ImageName</key>
 				<string>1Selfcare</string>
+				<key>SubSubCategories</key>
+				<array>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 1</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 2</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 3</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 4</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 5</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+				</array>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Grooming</string>
 				<key>ImageName</key>
 				<string>2Grooming</string>
+				<key>SubSubCategories</key>
+				<array>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 1</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 2</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 3</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 4</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 5</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+				</array>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Get your zen on</string>
 				<key>ImageName</key>
 				<string>3Zen</string>
+				<key>SubSubCategories</key>
+				<array>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 1</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 2</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 3</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 4</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 5</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+				</array>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Engage your senses</string>
 				<key>ImageName</key>
 				<string>4Senses</string>
+				<key>SubSubCategories</key>
+				<array>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 1</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 2</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 3</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 4</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 5</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+				</array>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Let your creative juices flow</string>
 				<key>ImageName</key>
 				<string>5Creative</string>
+				<key>SubSubCategories</key>
+				<array>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 1</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 2</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 3</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 4</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 5</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+				</array>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Household stuff</string>
 				<key>ImageName</key>
 				<string>6Household</string>
+				<key>SubSubCategories</key>
+				<array>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 1</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 2</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 3</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 4</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 5</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+				</array>
 			</dict>
 			<dict>
 				<key>Title</key>
 				<string>Future and past fun</string>
 				<key>ImageName</key>
 				<string>1Selfcare</string>
+				<key>SubSubCategories</key>
+				<array>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 1</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 2</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 3</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 4</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sub Cat 5</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+				</array>
 			</dict>
 		</array>
 	</dict>

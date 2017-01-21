@@ -27,7 +27,7 @@ class HowAccomplishVC: UIViewController {
         btnLikely.setCornerRadious(btnUnlikely.frame.height/2)
         btnGotThis.setCornerRadious(btnUnlikely.frame.height/2)
         
-        categoryLabel.text = SelectedSubCategory
+        categoryLabel.text = SelectedSubSubCategoryTitle
     }
 
     override func didReceiveMemoryWarning() {

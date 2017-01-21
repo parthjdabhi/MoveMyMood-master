@@ -2386,21 +2386,20 @@ cope at all</string>
                                             <action selector="actionBackButton:" destination="5eh-ot-8zW" eventType="touchUpInside" id="alI-Un-jS7"/>
                                         </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iTunesArtwork.png" translatesAutoresizingMaskIntoConstraints="NO" id="JCv-hF-2O0">
-                                        <rect key="frame" x="167" y="22" width="40" height="35"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="JCv-hF-2O0" secondAttribute="height" multiplier="8:7" id="6Br-zd-gAY"/>
-                                        </constraints>
-                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate Activities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xoh-Sq-ziQ">
+                                        <rect key="frame" x="130" y="29" width="115" height="22"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.50980392159999999" green="0.64705882349999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="cX2-8r-mJp" firstAttribute="leading" secondItem="l8n-nf-lE7" secondAttribute="leading" constant="10" id="43M-l9-8WD"/>
                                     <constraint firstItem="cX2-8r-mJp" firstAttribute="top" secondItem="l8n-nf-lE7" secondAttribute="top" constant="24" id="EqW-C0-MdA"/>
-                                    <constraint firstItem="JCv-hF-2O0" firstAttribute="width" secondItem="l8n-nf-lE7" secondAttribute="height" multiplier="5:8" id="LPD-3A-w8y"/>
-                                    <constraint firstItem="JCv-hF-2O0" firstAttribute="centerX" secondItem="l8n-nf-lE7" secondAttribute="centerX" id="OAw-95-BcP"/>
-                                    <constraint firstAttribute="bottom" secondItem="JCv-hF-2O0" secondAttribute="bottom" constant="7" id="SXD-Ll-5FO"/>
+                                    <constraint firstItem="Xoh-Sq-ziQ" firstAttribute="centerX" secondItem="l8n-nf-lE7" secondAttribute="centerX" id="JER-At-Aca"/>
                                     <constraint firstAttribute="height" constant="64" id="V6X-Ny-cjh"/>
+                                    <constraint firstItem="Xoh-Sq-ziQ" firstAttribute="centerY" secondItem="cX2-8r-mJp" secondAttribute="centerY" id="i9X-wm-dfP"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Lcm-38-wfZ">
@@ -3106,10 +3105,10 @@ cope at all</string>
             </objects>
             <point key="canvasLocation" x="2884.5" y="2047.5"/>
         </scene>
-        <!--List Activity RatesVC-->
+        <!--My Activity ListVC-->
         <scene sceneID="GPM-8w-XGT">
             <objects>
-                <viewController storyboardIdentifier="ListActivityRatesVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y00-zV-xRy" customClass="ListActivityRatesVC" customModule="Postnatal_Depression" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MyActivityListVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y00-zV-xRy" customClass="MyActivityListVC" customModule="Postnatal_Depression" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Er4-lH-NXh"/>
                         <viewControllerLayoutGuide type="bottom" id="fyA-Bp-gSW"/>
@@ -3243,22 +3242,21 @@ cope at all</string>
                                             <action selector="actionSheduleAnActivityButton:" destination="Y00-zV-xRy" eventType="touchUpInside" id="fjc-ZN-RO6"/>
                                         </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iTunesArtwork.png" translatesAutoresizingMaskIntoConstraints="NO" id="35g-mM-7fV">
-                                        <rect key="frame" x="167" y="22" width="40" height="35"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="35g-mM-7fV" secondAttribute="height" multiplier="8:7" id="8Ws-yW-qcw"/>
-                                        </constraints>
-                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Activity List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5DW-2n-W09">
+                                        <rect key="frame" x="126" y="29" width="123" height="22"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.50980392159999999" green="0.64705882349999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="Yqx-Yp-tC7" firstAttribute="centerY" secondItem="WIb-5U-5II" secondAttribute="centerY" id="34e-L2-ry9"/>
                                     <constraint firstItem="WIb-5U-5II" firstAttribute="leading" secondItem="5Wz-rV-Wti" secondAttribute="leading" constant="10" id="357-J3-RJB"/>
                                     <constraint firstAttribute="trailing" secondItem="Yqx-Yp-tC7" secondAttribute="trailing" id="Lqz-Jg-GcI"/>
-                                    <constraint firstAttribute="bottom" secondItem="35g-mM-7fV" secondAttribute="bottom" constant="7" id="RM9-oy-vkp"/>
                                     <constraint firstAttribute="height" constant="64" id="UiM-MX-Mik"/>
-                                    <constraint firstItem="35g-mM-7fV" firstAttribute="centerX" secondItem="5Wz-rV-Wti" secondAttribute="centerX" id="bVv-D6-jZ0"/>
-                                    <constraint firstItem="35g-mM-7fV" firstAttribute="width" secondItem="5Wz-rV-Wti" secondAttribute="height" multiplier="5:8" id="byL-us-gbK"/>
+                                    <constraint firstItem="5DW-2n-W09" firstAttribute="centerY" secondItem="WIb-5U-5II" secondAttribute="centerY" id="pIf-wO-Bmp"/>
+                                    <constraint firstItem="5DW-2n-W09" firstAttribute="centerX" secondItem="5Wz-rV-Wti" secondAttribute="centerX" id="tbS-D1-CMe"/>
                                     <constraint firstItem="WIb-5U-5II" firstAttribute="top" secondItem="5Wz-rV-Wti" secondAttribute="top" constant="24" id="vBx-lX-WLM"/>
                                 </constraints>
                             </view>
@@ -3399,7 +3397,7 @@ cope at all</string>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gvf-g3-4Is">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFD-gc-edK">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFD-gc-edK">
                                         <rect key="frame" x="10" y="24" width="32" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="32" id="a6O-vW-j6O"/>
@@ -3411,7 +3409,7 @@ cope at all</string>
                                             <action selector="actionBackButton:" destination="HZU-48-oS7" eventType="touchUpInside" id="24V-iP-umS"/>
                                         </connections>
                                     </button>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgY-mS-TBF">
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgY-mS-TBF">
                                         <rect key="frame" x="301" y="24" width="74" height="32"/>
                                         <color key="backgroundColor" red="0.50980392159999999" green="0.64705882349999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -3436,6 +3434,7 @@ cope at all</string>
                                     <constraint firstAttribute="bottom" secondItem="87P-6h-Eli" secondAttribute="bottom" constant="7" id="Ads-gX-pih"/>
                                     <constraint firstItem="87P-6h-Eli" firstAttribute="width" secondItem="gvf-g3-4Is" secondAttribute="height" multiplier="5:8" id="DBz-bw-udU"/>
                                     <constraint firstItem="87P-6h-Eli" firstAttribute="centerX" secondItem="gvf-g3-4Is" secondAttribute="centerX" id="GVX-ir-lKQ"/>
+                                    <constraint firstItem="xFD-gc-edK" firstAttribute="centerY" secondItem="87P-6h-Eli" secondAttribute="centerY" id="OyA-3r-Vlk"/>
                                     <constraint firstAttribute="trailing" secondItem="tgY-mS-TBF" secondAttribute="trailing" id="cPZ-XQ-Hm7"/>
                                     <constraint firstAttribute="height" constant="64" id="sUO-hO-YLz"/>
                                     <constraint firstItem="xFD-gc-edK" firstAttribute="leading" secondItem="gvf-g3-4Is" secondAttribute="leading" constant="10" id="wVw-V0-scR"/>
@@ -3511,7 +3510,7 @@ cope at all</string>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gKB-uf-XLu">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWV-io-K7S">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWV-io-K7S">
                                         <rect key="frame" x="10" y="24" width="32" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="32" id="2dj-Hr-fiZ"/>
@@ -3523,7 +3522,7 @@ cope at all</string>
                                             <action selector="actionBackButton:" destination="YHs-Mo-CMU" eventType="touchUpInside" id="JU0-Ex-wgQ"/>
                                         </connections>
                                     </button>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEz-Pj-b8u">
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEz-Pj-b8u">
                                         <rect key="frame" x="301" y="24" width="74" height="32"/>
                                         <color key="backgroundColor" red="0.50980392159999999" green="0.64705882349999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -3545,6 +3544,7 @@ cope at all</string>
                                 </subviews>
                                 <color key="backgroundColor" red="0.50980392159999999" green="0.64705882349999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="dWV-io-K7S" firstAttribute="centerY" secondItem="WNZ-1u-8iR" secondAttribute="centerY" id="7fC-oX-U4t"/>
                                     <constraint firstItem="dWV-io-K7S" firstAttribute="leading" secondItem="gKB-uf-XLu" secondAttribute="leading" constant="10" id="Fl3-NU-wxn"/>
                                     <constraint firstAttribute="trailing" secondItem="nEz-Pj-b8u" secondAttribute="trailing" id="Gbj-xv-0eg"/>
                                     <constraint firstItem="nEz-Pj-b8u" firstAttribute="centerY" secondItem="dWV-io-K7S" secondAttribute="centerY" id="hZJ-rO-zhi"/>

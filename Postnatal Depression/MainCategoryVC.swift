@@ -171,10 +171,10 @@ class MainCategoryVC: UIViewController, UITableViewDelegate, UITableViewDataSour
 //            } else {
                 //Value Selected
                 //print(currentCell?.lblCategoryTitle.text)
-        
+
+        SelectedCategoryTitle = Categories[indexPath.row]["MainCategory"] as? String ?? "-"
         SelectedCategory = Categories[indexPath.row]
         let next = self.storyboard?.instantiateViewControllerWithIdentifier("SubCategoryVC") as! SubCategoryVC!
-        //next.categories =
         self.navigationController?.pushViewController(next, animated: true)
 
 //            }

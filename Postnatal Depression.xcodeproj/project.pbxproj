@@ -18,7 +18,7 @@
 		5E6CD5BF1E02B50D00730CD0 /* MainCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6CD5BE1E02B50D00730CD0 /* MainCategoryVC.swift */; };
 		5E6CD5C11E02BF2100730CD0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E6CD5C01E02BF2100730CD0 /* Images.xcassets */; };
 		5E6CD5C41E02C11400730CD0 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6CD5C31E02C11400730CD0 /* CategoryTableViewCell.swift */; };
-		5E84FC5A1E1BE00000AFF73B /* ListActivityRatesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E84FC591E1BE00000AFF73B /* ListActivityRatesVC.swift */; };
+		5E84FC5A1E1BE00000AFF73B /* MyActivityListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E84FC591E1BE00000AFF73B /* MyActivityListVC.swift */; };
 		5E84FC5C1E1BE23D00AFF73B /* RateListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E84FC5B1E1BE23D00AFF73B /* RateListTableViewCell.swift */; };
 		5E84FC5F1E1BEA2000AFF73B /* AccomplishUnlikelyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E84FC5E1E1BEA2000AFF73B /* AccomplishUnlikelyVC.swift */; };
 		5E9F2C7C1E1E770200971C6D /* CustomAlertViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9F2C7A1E1E770200971C6D /* CustomAlertViewVC.swift */; };
@@ -119,7 +119,7 @@
 		5E6CD5BE1E02B50D00730CD0 /* MainCategoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCategoryVC.swift; sourceTree = "<group>"; };
 		5E6CD5C01E02BF2100730CD0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5E6CD5C31E02C11400730CD0 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
-		5E84FC591E1BE00000AFF73B /* ListActivityRatesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListActivityRatesVC.swift; sourceTree = "<group>"; };
+		5E84FC591E1BE00000AFF73B /* MyActivityListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyActivityListVC.swift; sourceTree = "<group>"; };
 		5E84FC5B1E1BE23D00AFF73B /* RateListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateListTableViewCell.swift; sourceTree = "<group>"; };
 		5E84FC5E1E1BEA2000AFF73B /* AccomplishUnlikelyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccomplishUnlikelyVC.swift; sourceTree = "<group>"; };
 		5E9F2C7A1E1E770200971C6D /* CustomAlertViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlertViewVC.swift; sourceTree = "<group>"; };
@@ -250,10 +250,10 @@
 				5E6CD5C21E02C0D900730CD0 /* Tableview Cell */,
 				5E6CD5BE1E02B50D00730CD0 /* MainCategoryVC.swift */,
 				5E11115E1E2DDE5200DD86DC /* SubCategoryVC.swift */,
-				5E84FC591E1BE00000AFF73B /* ListActivityRatesVC.swift */,
+				5E58EC891E05544400AF3ADC /* RateActivitiesVC.swift */,
+				5E84FC591E1BE00000AFF73B /* MyActivityListVC.swift */,
 				5E84FC5E1E1BEA2000AFF73B /* AccomplishUnlikelyVC.swift */,
 				5EAEB4B71E1D173C00766836 /* SomewhatLikelyVC.swift */,
-				5E58EC891E05544400AF3ADC /* RateActivitiesVC.swift */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -690,7 +690,7 @@
 				DA7C7A4F1E00EA0900F2DC7C /* LandingViewController.swift in Sources */,
 				5E9F2C7C1E1E770200971C6D /* CustomAlertViewVC.swift in Sources */,
 				DA7C7A5D1E010B0000F2DC7C /* ReminderViewController.swift in Sources */,
-				5E84FC5A1E1BE00000AFF73B /* ListActivityRatesVC.swift in Sources */,
+				5E84FC5A1E1BE00000AFF73B /* MyActivityListVC.swift in Sources */,
 				DA7C7A4A1E00E27300F2DC7C /* ScoreQuestionsViewController.swift in Sources */,
 				DA7C7A891E01265400F2DC7C /* ScoreQuestion11ViewController.swift in Sources */,
 				DA4E88FC1E257B7A00137796 /* AlertTitleOnlyVC.swift in Sources */,
