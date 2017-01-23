@@ -18,31 +18,61 @@
 				<array>
 					<dict>
 						<key>Title</key>
-						<string>Make a piece of artwork</string>
+						<string>Nap</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Prepare a meal</string>
+						<string>Shower</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Rearrange all of your furniture</string>
+						<string>Call/Text/E-mail someone special</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Paint your nails a fun color</string>
+						<string>Deep breathing</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Read a religious text</string>
+						<string>Let it out: cry if you need to</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Savor a cup of tea/coffee</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Read a book</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Make a good meal</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Watch a movie</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Make my own</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
@@ -57,25 +87,49 @@
 				<array>
 					<dict>
 						<key>Title</key>
-						<string>Shaving</string>
+						<string>Deep condition your hair</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Mouth Care</string>
+						<string>Take a long shower</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Dressing</string>
+						<string>Exfoliate</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Hair Care</string>
+						<string>Paint nails</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Brush hair</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Soak in a bath</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Wear something that makes you feel good</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Make my own</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
@@ -90,31 +144,63 @@
 				<array>
 					<dict>
 						<key>Title</key>
-						<string>Laugh</string>
+						<string>Deep breathing</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>make balance your goal</string>
+						<string>Meditate</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 3</string>
+						<string>Exfoliate</string>
+						<key>New item</key>
+						<string>Yoga moves</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 4</string>
+						<string>Listen to guided meditation</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 5</string>
+						<string>Mindfulness</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Create a relaxing visual imagery</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Create and use positive affirmations</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Make a gratitude list</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Pray</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Make my own</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
@@ -129,25 +215,55 @@
 				<array>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 1</string>
+						<string>Bake something you enjoy</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 2</string>
+						<string>Soak in the tub</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 3</string>
+						<string>Listen to music</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 5</string>
+						<string>Dance by yourself, Enjoy the aroma of herbal tea, Plant something, Arrange flowers, Make my own</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Dance by yourself</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Enjoy the aroma of herbal tea</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Plant something</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Arrange flowers</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Make my own</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>

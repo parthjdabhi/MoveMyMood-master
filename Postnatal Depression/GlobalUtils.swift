@@ -24,6 +24,8 @@ var SelectedSubCategory:Dictionary<String,AnyObject> = [:]
 var SelectedCategoryTitle:String?
 var SelectedSubCategoryTitle:String?
 var SelectedSubSubCategoryTitle:String?
+var SelectedSubSubCategoryTitles:Array<String> = []
+
 
 
 // // MARK: - Methods

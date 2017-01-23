@@ -18,7 +18,9 @@ class SubCategoryVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     
 //    var categories:Array<String> = ["At home","Outside","With others","Just for me"]
 //    var items:Dictionary<String,AnyObject> = ["At home":["Self care", "Grooming", "Get your zen on", "Engage your senses", "Let your creative juices flow", "Household stuff", "Future and past fun"],"Outside":["Outside", "Grooming","Health", "Treat", "Exercise"],"With others":["Connect", "Meet with a friend","Romantic fun", "For others"],"Just for me":["Self care", "Grooming", "Get your zen on", "Engage your senses", "Let your creative juices flow", "Household stuff", "Future and past fun"]]
+    
     var selectedSections:Array<Int> = []
+    var selectedIndexpaths:Array<NSIndexPath> = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +28,7 @@ class SubCategoryVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         // Do any additional setup after loading the view.
         btnNext.layer.cornerRadius = (btnNext.frame.height/2)
         btnNext.layer.masksToBounds = true
+        btnNext.hidden = true
         
         lblTitle.text = SelectedCategory["MainCategory"] as? String
         SubCategories = SelectedCategory["SubCategories"] as? [Dictionary<String,AnyObject>] ?? []
@@ -49,6 +52,26 @@ class SubCategoryVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
 
     @IBAction func actionBackButton(sender: AnyObject) {
         self.navigationController!.popViewControllerAnimated(true)
+    }
+    
+    @IBAction func actionNextButton(sender: AnyObject) {
+        
+        print("Slected counts : \(selectedIndexpaths.count)")
+        let next = self.storyboard?.instantiateViewControllerWithIdentifier("RateActivitiesVC") as! RateActivitiesVC!
+        
+        SelectedSubSubCategoryTitles = []
+        for indexPath in selectedIndexpaths {
+            if indexPath.row == 0 {
+                continue
+            }
+            let SubSubCategories = (SubCategories[indexPath.section]["SubSubCategories"] as? Array<Dictionary<String,AnyObject>> ?? [])
+            SelectedSubSubCategoryTitles.append(SubSubCategories[indexPath.row-1]["Title"] as? String ?? "-")
+        }
+        
+        //let next = self.storyboard?.instantiateViewControllerWithIdentifier("MyActivityListVC") as! MyActivityListVC!
+        
+        
+        self.navigationController?.pushViewController(next, animated: true)
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -98,7 +121,7 @@ class SubCategoryVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
                     cell.imgStatus.transform = CGAffineTransformMakeRotation(CGFloat(M_PI * 2.0));
                 })
             }
-            
+            cell.backgroundColor = UIColor.whiteColor()
             return cell
         } else {
             //Sub menu
@@ -113,6 +136,16 @@ class SubCategoryVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
             cell.imgStatus.hidden = true
             cell.imgCategory.hidden = true
             
+            
+            
+            if let index = selectedIndexpaths.indexOf(indexPath) {
+                cell.selected = true
+                cell.backgroundColor = UIColor.whiteColor()
+            } else {
+                cell.selected = false
+                cell.backgroundColor = UIColor.whiteColor()
+            }
+            cell.backgroundColor = UIColor.whiteColor()
             return cell
         }
     }
@@ -123,9 +156,8 @@ class SubCategoryVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         var currentCell:CategoryTableViewCell?
         if let indexPath = tableView.indexPathForSelectedRow {
             currentCell = tableView.cellForRowAtIndexPath(indexPath) as? CategoryTableViewCell
-            print((currentCell?.lblCategoryTitle.text)! as String)
+            print("\(currentCell?.lblCategoryTitle.text)")
         }
-        
         
         if selectedSections.contains(indexPath.section) {
             if indexPath.row == 0 {
@@ -134,19 +166,30 @@ class SubCategoryVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
                 })
                 //Unselect section
                 selectedSections.removeAtIndex(selectedSections.indexOf(indexPath.section) ?? 0)
+                selectedIndexpaths = selectedIndexpaths.filter({ (section) -> Bool in
+                    if section.section == indexPath.section {
+                        return false
+                    }
+                    return true
+                })
                 //self.tblCategory.reloadData()
                 self.tblCategory.reloadSections(NSIndexSet(index: indexPath.section), withRowAnimation: UITableViewRowAnimation.Fade)
+                //self.tblCategory.deselectRowAtIndexPath(indexPath, animated: true)
             } else {
                 //Value Selected
                 print(currentCell?.lblCategoryTitle.text)
+                
+                selectedIndexpaths.append(indexPath)
+                
+                btnNext.hidden = (selectedIndexpaths.count > 0) ? false : true
                 
                 SelectedSubCategoryTitle = SubCategories[indexPath.row]["Title"] as? String ?? "-"
                 let SubSubCategories = (SubCategories[indexPath.section]["SubSubCategories"] as? Array<Dictionary<String,AnyObject>> ?? [])
                 SelectedSubSubCategoryTitle = (SubSubCategories.count > (indexPath.row-1)) ? SubSubCategories[indexPath.row-1]["Title"] as? String ?? "-" : "-"
                 
                 //let next = self.storyboard?.instantiateViewControllerWithIdentifier("RateActivitiesVC") as! RateActivitiesVC!
-                let next = self.storyboard?.instantiateViewControllerWithIdentifier("MyActivityListVC") as! MyActivityListVC!
-                self.navigationController?.pushViewController(next, animated: true)
+                //let next = self.storyboard?.instantiateViewControllerWithIdentifier("MyActivityListVC") as! MyActivityListVC!
+                //self.navigationController?.pushViewController(next, animated: true)
             }
         } else {
             //Expand submenu
@@ -166,6 +209,19 @@ class SubCategoryVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
             //self.tblCategory.reloadData()
             self.tblCategory.reloadSections(NSIndexSet(index: indexPath.section), withRowAnimation: UITableViewRowAnimation.Fade)
         }
+        
+        print("Selected counts : \(selectedIndexpaths.count)")
+    }
+    
+    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+        if let index = selectedIndexpaths.indexOf(indexPath) {
+            selectedIndexpaths.removeAtIndex(index)
+            let currentCell:CategoryTableViewCell? = tableView.cellForRowAtIndexPath(indexPath) as? CategoryTableViewCell
+            currentCell?.backgroundColor = UIColor.whiteColor()
+        }
+        btnNext.hidden = (selectedIndexpaths.count > 0) ? false : true
+        
+        print("Selected counts : \(selectedIndexpaths.count)")
     }
     
 }

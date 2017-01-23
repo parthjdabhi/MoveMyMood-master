@@ -3673,7 +3673,7 @@ cope at all</string>
                                     <constraint firstItem="XXr-9x-6MU" firstAttribute="top" secondItem="xTa-Tp-ivl" secondAttribute="top" constant="29" id="oA3-Nj-vQ5"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="56" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1WM-sB-8xe">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="56" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1WM-sB-8xe">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -3688,7 +3688,7 @@ cope at all</string>
                                                     <rect key="frame" x="66" y="18" width="120" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
+                                                    <color key="highlightedColor" red="0.43921568630000002" green="0.42745098040000001" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y4o-qe-HaR">
                                                     <rect key="frame" x="8" y="7" width="42" height="42"/>
@@ -3701,12 +3701,15 @@ cope at all</string>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right-arrow" translatesAutoresizingMaskIntoConstraints="NO" id="ZJX-hI-pOR">
                                                     <rect key="frame" x="339" y="18" width="20" height="20"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="20" id="XUj-dU-G3p"/>
                                                         <constraint firstAttribute="height" constant="20" id="yeh-Cy-y9x"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="ZJX-hI-pOR" firstAttribute="centerY" secondItem="QJh-k6-5vj" secondAttribute="centerY" id="Dl7-gV-Bvu"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="ZJX-hI-pOR" secondAttribute="trailing" constant="8" id="EmT-fb-a14"/>
@@ -3731,7 +3734,7 @@ cope at all</string>
                                     <outlet property="delegate" destination="q0x-Ud-Egb" id="cVb-lH-m1a"/>
                                 </connections>
                             </tableView>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSB-4y-hTU">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSB-4y-hTU">
                                 <rect key="frame" x="20" y="605" width="335" height="52"/>
                                 <color key="backgroundColor" red="0.50980392159999999" green="0.64705882349999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -3739,6 +3742,9 @@ cope at all</string>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
                                 <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="actionNextButton:" destination="q0x-Ud-Egb" eventType="touchUpInside" id="42H-7G-Isd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -3761,7 +3767,7 @@ cope at all</string>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="btnNext" destination="hSB-4y-hTU" id="bpW-aL-NOz"/>
+                        <outlet property="btnNext" destination="hSB-4y-hTU" id="Qjo-U2-hm8"/>
                         <outlet property="lblTitle" destination="XXr-9x-6MU" id="3rc-6V-6hs"/>
                         <outlet property="tblCategory" destination="1WM-sB-8xe" id="7ba-U2-mJs"/>
                     </connections>

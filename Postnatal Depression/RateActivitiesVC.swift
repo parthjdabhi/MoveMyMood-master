@@ -55,8 +55,8 @@ class RateActivitiesVC: UIViewController {
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-        //return theCategory.count
+        //return 1
+        return SelectedSubSubCategoryTitles.count
         //return 15
     }
     
@@ -65,7 +65,7 @@ class RateActivitiesVC: UIViewController {
         //Main Category
         let cell:RateTableViewCell = self.tblRates.dequeueReusableCellWithIdentifier("RateTableViewCell") as! RateTableViewCell
         
-        cell.lblCategoryTitle?.text = SelectedSubSubCategoryTitle ?? "-"
+        cell.lblCategoryTitle?.text = SelectedSubSubCategoryTitles[indexPath.row] ?? "-"
         cell.vRate?.tintColor = UIColor(red: 241/255.0, green: 196/255.0, blue: 15/255.0, alpha: 1)
         cell.vRate?.value = 4
         
