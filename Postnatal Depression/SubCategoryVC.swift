@@ -94,6 +94,14 @@ class SubCategoryVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         }
     }
     
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        let selectionColor = UIView() as UIView
+        selectionColor.layer.borderWidth = 1
+        selectionColor.layer.borderColor = UIColor.whiteColor().CGColor
+        selectionColor.backgroundColor = UIColor.whiteColor()
+        cell.selectedBackgroundView = selectionColor
+    }
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         
@@ -150,6 +158,11 @@ class SubCategoryVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         }
     }
     
+    func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath) -> NSIndexPath? {
+        return indexPath;
+        //return (selectedIndexpaths.count >= 5) ? nil : indexPath;
+    }
+    
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
     {
         
@@ -180,10 +193,10 @@ class SubCategoryVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
                 print(currentCell?.lblCategoryTitle.text)
                 
                 selectedIndexpaths.append(indexPath)
-                
                 btnNext.hidden = (selectedIndexpaths.count > 0) ? false : true
                 
-                SelectedSubCategoryTitle = SubCategories[indexPath.row]["Title"] as? String ?? "-"
+                SelectedSubCategoryTitle = SubCategories[indexPath.section]["Title"] as? String ?? "-"
+                
                 let SubSubCategories = (SubCategories[indexPath.section]["SubSubCategories"] as? Array<Dictionary<String,AnyObject>> ?? [])
                 SelectedSubSubCategoryTitle = (SubSubCategories.count > (indexPath.row-1)) ? SubSubCategories[indexPath.row-1]["Title"] as? String ?? "-" : "-"
                 

@@ -70,12 +70,6 @@
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
-					<dict>
-						<key>Title</key>
-						<string>Make my own</string>
-						<key>ImageName</key>
-						<string>11Selfcare</string>
-					</dict>
 				</array>
 			</dict>
 			<dict>
@@ -124,12 +118,6 @@
 					<dict>
 						<key>Title</key>
 						<string>Wear something that makes you feel good</string>
-						<key>ImageName</key>
-						<string>11Selfcare</string>
-					</dict>
-					<dict>
-						<key>Title</key>
-						<string>Make my own</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
@@ -198,12 +186,6 @@
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
-					<dict>
-						<key>Title</key>
-						<string>Make my own</string>
-						<key>ImageName</key>
-						<string>11Selfcare</string>
-					</dict>
 				</array>
 			</dict>
 			<dict>
@@ -233,12 +215,6 @@
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Dance by yourself, Enjoy the aroma of herbal tea, Plant something, Arrange flowers, Make my own</string>
-						<key>ImageName</key>
-						<string>11Selfcare</string>
-					</dict>
-					<dict>
-						<key>Title</key>
 						<string>Dance by yourself</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
@@ -261,12 +237,6 @@
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
-					<dict>
-						<key>Title</key>
-						<string>Make my own</string>
-						<key>ImageName</key>
-						<string>11Selfcare</string>
-					</dict>
 				</array>
 			</dict>
 			<dict>
@@ -278,31 +248,79 @@
 				<array>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 1</string>
+						<string>Paint</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 2</string>
+						<string>Draw</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 3</string>
+						<string>Color</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 4</string>
+						<string>Craft</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 5</string>
+						<string>Journal</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Write a poem</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Doodle</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Make a salt scrub</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Start a puzzle</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Sewing</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Knitting</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Rearrange a room</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Create a photo album</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
@@ -317,31 +335,55 @@
 				<array>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 1</string>
+						<string>Make a dentist appointment</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 2</string>
+						<string>Make a doctors appointment</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 3</string>
+						<string>Pay bills</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 4</string>
+						<string>Search for childcare</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 5</string>
+						<string>Laundry</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Dishes</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Grocery shopping</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Repairing things around the house</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Complete a task</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
@@ -356,31 +398,31 @@
 				<array>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 1</string>
+						<string>Plan a vacation</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 2</string>
+						<string>Look through vacation pictures</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 3</string>
+						<string>Remember beautiful scenery</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 4</string>
+						<string>Plan to visit friends</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 5</string>
+						<string>Plan to visit family</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
@@ -397,38 +439,38 @@
 		<array>
 			<dict>
 				<key>Title</key>
-				<string>Outside</string>
+				<string>Nature</string>
 				<key>ImageName</key>
 				<string>8Outside</string>
 				<key>SubSubCategories</key>
 				<array>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 1</string>
+						<string>Sit in the grass and take off your shoes</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 2</string>
+						<string>Find sunshine and enjoy it</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 3</string>
+						<string>picnic</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 4</string>
+						<string>sit at a park</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 5</string>
+						<string>Gardening</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
@@ -443,31 +485,19 @@
 				<array>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 1</string>
+						<string>Manicure</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 2</string>
+						<string>Pedicure</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 3</string>
-						<key>ImageName</key>
-						<string>11Selfcare</string>
-					</dict>
-					<dict>
-						<key>Title</key>
-						<string>Sub Cat 4</string>
-						<key>ImageName</key>
-						<string>11Selfcare</string>
-					</dict>
-					<dict>
-						<key>Title</key>
-						<string>Sub Cat 5</string>
+						<string>Haircut</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
@@ -482,31 +512,31 @@
 				<array>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 1</string>
+						<string>Go to a dentist appointment</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 2</string>
+						<string>Go to a doctors appointment</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 3</string>
+						<string>Prepare a healthy meal</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 4</string>
+						<string>Acupuncture</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 5</string>
+						<string>Massage</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
@@ -521,31 +551,25 @@
 				<array>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 1</string>
+						<string>Shopping</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 2</string>
+						<string>Pick up flowers</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 3</string>
+						<string>Go to a movie</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 4</string>
-						<key>ImageName</key>
-						<string>11Selfcare</string>
-					</dict>
-					<dict>
-						<key>Title</key>
-						<string>Sub Cat 5</string>
+						<string>Go for a drive</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
@@ -560,31 +584,49 @@
 				<array>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 1</string>
+						<string>Walk</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 2</string>
+						<string>Jog</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 3</string>
+						<string>Hike</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 4</string>
+						<string>Swim</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 5</string>
+						<string>Yoga</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Dance</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Work-out</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Work-out video</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
@@ -608,31 +650,31 @@
 				<array>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 1</string>
+						<string>Reach out to someone with a Call/Text/e-mail</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 2</string>
+						<string>Five minutes of chatting to reconnect with your partner</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 3</string>
+						<string>Reach out to a supportive family member</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 4</string>
+						<string>Join a mommy group</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 5</string>
+						<string>Have friends over for take-out/ potluck</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
@@ -647,31 +689,37 @@
 				<array>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 1</string>
+						<string>Coffee</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 2</string>
+						<string>Exercise</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 3</string>
+						<string>Meal</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 4</string>
+						<string>Picnic</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 5</string>
+						<string>Play frisbee</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Go dancing</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
@@ -686,31 +734,43 @@
 				<array>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 1</string>
+						<string>Go on a date</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 2</string>
+						<string>Watch a movie</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 3</string>
+						<string>Play a board game</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 4</string>
+						<string>Hold hands</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 5</string>
+						<string>Hug</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Kiss</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Have sex</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
@@ -725,31 +785,37 @@
 				<array>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 1</string>
+						<string>Give someone a gift</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 2</string>
+						<string>Donate blood</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 3</string>
+						<string>Volunteer at an animal shelter</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 4</string>
+						<string>Volunteer with the elderly</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
 					<dict>
 						<key>Title</key>
-						<string>Sub Cat 5</string>
+						<string>Volunteer at a soup kitchen</string>
+						<key>ImageName</key>
+						<string>11Selfcare</string>
+					</dict>
+					<dict>
+						<key>Title</key>
+						<string>Volunteer with youth</string>
 						<key>ImageName</key>
 						<string>11Selfcare</string>
 					</dict>
