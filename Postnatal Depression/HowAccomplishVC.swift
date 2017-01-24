@@ -7,11 +7,11 @@
 //
 
 import UIKit
-import HCSStarRatingView
+//import HCSStarRatingView
 
 class HowAccomplishVC: UIViewController {
 
-    @IBOutlet weak var rateViewNap: HCSStarRatingView!
+    @IBOutlet weak var rateViewNap: CosmosView!
     @IBOutlet weak var btnUnlikely: UIButton!
     @IBOutlet weak var btnLikely: UIButton!
     @IBOutlet weak var btnGotThis: UIButton!

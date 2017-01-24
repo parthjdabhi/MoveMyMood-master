@@ -7,11 +7,11 @@
 //
 
 import UIKit
-import HCSStarRatingView
+//import HCSStarRatingView
 
 class RateListTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var vRate: HCSStarRatingView?
+    @IBOutlet weak var vRate: CosmosView?
     @IBOutlet weak var lblCategoryTitle: UILabel?
 
     override func awakeFromNib() {

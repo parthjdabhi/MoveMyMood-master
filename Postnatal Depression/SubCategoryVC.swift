@@ -32,7 +32,6 @@ class SubCategoryVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         
         lblTitle.text = SelectedCategory["MainCategory"] as? String
         SubCategories = SelectedCategory["SubCategories"] as? [Dictionary<String,AnyObject>] ?? []
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -69,7 +68,6 @@ class SubCategoryVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         }
         
         //let next = self.storyboard?.instantiateViewControllerWithIdentifier("MyActivityListVC") as! MyActivityListVC!
-        
         
         self.navigationController?.pushViewController(next, animated: true)
     }
@@ -115,7 +113,7 @@ class SubCategoryVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
             cell.imgCategory.layer.cornerRadius = (cell.imgCategory.frame.width/2)
             cell.imgCategory.layer.masksToBounds = true
             
-            cell.imgCategory.image = UIImage(named:SubCategories[indexPath.row]["ImageName"] as? String ?? "ic_cat_placeholder")
+            cell.imgCategory.image = UIImage(named:SubCategories[indexPath.section]["ImageName"] as? String ?? "ic_cat_placeholder")
             
             cell.imgStatus.hidden = false
             cell.imgCategory.hidden = false
@@ -143,8 +141,6 @@ class SubCategoryVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
             
             cell.imgStatus.hidden = true
             cell.imgCategory.hidden = true
-            
-            
             
             if let index = selectedIndexpaths.indexOf(indexPath) {
                 cell.selected = true

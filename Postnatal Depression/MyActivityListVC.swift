@@ -77,7 +77,7 @@ class  MyActivityListVC: UIViewController {
         
         cell.lblCategoryTitle?.text = SelectedSubSubCategoryTitles[indexPath.row] ?? "-"
         cell.vRate?.tintColor = UIColor(red: 241/255.0, green: 196/255.0, blue: 15/255.0, alpha: 1)
-        cell.vRate?.value = 4
+        cell.vRate?.rating = 4
         
         //cell.lblCategoryTitle?.text = SubCategories[indexPath.row]["Title"] as? String ?? "-"
         //cell.vRate?.tintColor = UIColor(red: 241/255.0, green: 196/255.0, blue: 15/255.0, alpha: 1)

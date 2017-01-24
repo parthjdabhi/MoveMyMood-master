@@ -181,7 +181,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     }
                     
                     ratingVC.submitAction = {
-                        print("You rated \(ratingVC.ratingView.value) stars")
+                        print("You rated \(ratingVC.ratingView.rating) stars")
                         popup.dismiss({
                             let vc = self.storyBoard?.instantiateViewControllerWithIdentifier("MyActivityListVC") as? MyActivityListVC
                             UIApplication.topViewController()?.navigationController?.pushViewController(vc!, animated: true)

@@ -7,11 +7,11 @@
 //
 
 import UIKit
-import HCSStarRatingView
+//import HCSStarRatingView
 
 class RateAlertViewVC: UIViewController {
 
-    @IBOutlet weak var ratingView: HCSStarRatingView!
+    @IBOutlet weak var ratingView: CosmosView!
     
     var submitAction: blockAction?
     

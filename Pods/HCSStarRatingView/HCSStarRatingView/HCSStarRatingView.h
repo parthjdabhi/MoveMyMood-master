@@ -24,6 +24,8 @@
 
 typedef BOOL(^HCSStarRatingViewShouldBeginGestureRecognizerBlock)(UIGestureRecognizer *gestureRecognizer);
 
+typedef BOOL(^HCSStarRatingViewDidRateBlock)();
+
 IB_DESIGNABLE
 @interface HCSStarRatingView : UIControl
 @property (nonatomic) IBInspectable NSUInteger maximumValue;
@@ -42,5 +44,8 @@ IB_DESIGNABLE
 @property (nonatomic, strong) IBInspectable UIImage *emptyStarImage;
 @property (nonatomic, strong) IBInspectable UIImage *halfStarImage;
 @property (nonatomic, strong) IBInspectable UIImage *filledStarImage;
+
+@property (nonatomic, copy) HCSStarRatingViewDidRateBlock didRateBlock;
+
 @end
 

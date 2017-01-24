@@ -26,6 +26,7 @@ var SelectedSubCategoryTitle:String?
 var SelectedSubSubCategoryTitle:String?
 var SelectedSubSubCategoryTitles:Array<String> = []
 
+var SelectedSubSubCategoryRates:Dictionary<String,AnyObject> = [:]
 
 
 // // MARK: - Methods

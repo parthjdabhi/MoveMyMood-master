@@ -7,10 +7,10 @@
 //
 
 import UIKit
-import HCSStarRatingView
+//import HCSStarRatingView
 
 class RateTableViewCell: UITableViewCell {
-    @IBOutlet weak var vRate: HCSStarRatingView?
+    @IBOutlet weak var vRate: CosmosView?
     @IBOutlet weak var lblCategoryTitle: UILabel?
     
     override func awakeFromNib() {
@@ -23,4 +23,12 @@ class RateTableViewCell: UITableViewCell {
         
         // Configure the view for the selected state
     }
+    
+//    func listenOnVlaueChanged() {
+//        self.vRate?.addTarget(self, action: Selector(self.didRatingValueChanged()), forControlEvents: UIControlEvents.ValueChanged)
+//    }
+//    
+//    func didRatingValueChanged() {
+//        print("Changed rateing to : \(vRate?.value)")
+//    }
 }

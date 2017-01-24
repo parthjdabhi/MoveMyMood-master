@@ -7,6 +7,7 @@
 //
 
 import UIKit
+//import HCSStarRatingView
 
 class RateActivitiesVC: UIViewController {
 
@@ -22,6 +23,16 @@ class RateActivitiesVC: UIViewController {
         btnNext.layer.masksToBounds = true
         
         tblRates.scrollEnabled = false
+        
+        SelectedSubSubCategoryTitles = SelectedSubSubCategoryTitles.sort { (cat1, cat2) -> Bool in
+            let NCat1 = cat1.stringByReplacingOccurrencesOfString(" ", withString: "")
+            let NCat2 = cat2.stringByReplacingOccurrencesOfString(" ", withString: "")
+            let VCat1:Float = NSUserDefaults.standardUserDefaults().floatForKey(NCat1) ?? 0
+            let VCat2:Float = NSUserDefaults.standardUserDefaults().floatForKey(NCat2) ?? 0
+            
+            SelectedSubSubCategoryRates[NCat1] = 0
+            return (VCat1 > VCat2)
+        }
         
     }
 
@@ -67,10 +78,16 @@ class RateActivitiesVC: UIViewController {
         
         cell.lblCategoryTitle?.text = SelectedSubSubCategoryTitles[indexPath.row] ?? "-"
         cell.vRate?.tintColor = UIColor(red: 241/255.0, green: 196/255.0, blue: 15/255.0, alpha: 1)
-        cell.vRate?.value = 4
+        cell.vRate?.rating = 0
         
+        //cell.listenOnVlaueChanged()
+        //cell.vRate?.addTarget(self, action: Selector(self.didRatingValueChanged(cell.vRate!)), forControlEvents: UIControlEvents.ValueChanged)
         return cell
     }
+    
+//    @IBAction func didRatingValueChanged(view:CosmosView) {
+//        print("Changed rateing to : \(view.value)")
+//    }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         self.tblRates.deselectRowAtIndexPath(indexPath, animated: true)

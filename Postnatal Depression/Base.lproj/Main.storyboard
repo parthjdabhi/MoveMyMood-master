@@ -2438,12 +2438,11 @@ cope at all</string>
                                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GMO-mx-TO9" customClass="HCSStarRatingView">
-                                                    <rect key="frame" x="182" y="6" width="180" height="38"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GMO-mx-TO9" customClass="CosmosView" customModule="Postnatal_Depression" customModuleProvider="target">
+                                                    <rect key="frame" x="212" y="11" width="150" height="28"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="38" id="Mu6-8L-tdg"/>
-                                                        <constraint firstAttribute="width" constant="180" id="QPy-tS-QmD"/>
+                                                        <constraint firstAttribute="width" constant="150" id="QPy-tS-QmD"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="maximumValue">
@@ -2456,6 +2455,18 @@ cope at all</string>
                                                             <real key="value" value="5"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="boolean" keyPath="allowsHalfStars" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="starMargin">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                                            <integer key="value" value="0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="filledBorderWidth">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                                            <real key="value" value="28"/>
+                                                        </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                             </subviews>
@@ -2686,7 +2697,7 @@ cope at all</string>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qF8-cQ-TOm" customClass="HCSStarRatingView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qF8-cQ-TOm" customClass="CosmosView" customModule="Postnatal_Depression" customModuleProvider="target">
                                 <rect key="frame" x="138" y="285" width="99" height="17"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -3154,7 +3165,7 @@ cope at all</string>
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g0b-qz-wgb" customClass="HCSStarRatingView">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g0b-qz-wgb" customClass="CosmosView" customModule="Postnatal_Depression" customModuleProvider="target">
                                                     <rect key="frame" x="128" y="35" width="120" height="24"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
@@ -3346,7 +3357,7 @@ cope at all</string>
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iip-kr-v3I" customClass="HCSStarRatingView">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iip-kr-v3I" customClass="CosmosView" customModule="Postnatal_Depression" customModuleProvider="target">
                                                     <rect key="frame" x="128" y="35" width="120" height="24"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>

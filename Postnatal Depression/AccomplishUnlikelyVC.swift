@@ -55,7 +55,7 @@ class AccomplishUnlikelyVC: UIViewController {
         
         cell.lblCategoryTitle?.text = SubCategories[indexPath.row]["Title"] as? String ?? "-"
         cell.vRate?.tintColor = UIColor(red: 241/255.0, green: 196/255.0, blue: 15/255.0, alpha: 1)
-        cell.vRate?.value = 3
+        cell.vRate?.rating = 3
         
         return cell
     }
