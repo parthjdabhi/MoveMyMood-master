@@ -33,6 +33,15 @@ class  MyActivityListVC: UIViewController {
         
         SubCategories = SelectedCategory["SubCategories"] as? [Dictionary<String,AnyObject>] ?? []
         
+        SelectedSubSubCategoryTitles = SelectedSubSubCategoryTitles.sort { (cat1, cat2) -> Bool in
+            let NCat1 = cat1.stringByReplacingOccurrencesOfString(" ", withString: "")
+            let NCat2 = cat2.stringByReplacingOccurrencesOfString(" ", withString: "")
+            let VCat1:Float = NSUserDefaults.standardUserDefaults().floatForKey(NCat1) ?? 0
+            let VCat2:Float = NSUserDefaults.standardUserDefaults().floatForKey(NCat2) ?? 0
+            
+            SelectedSubSubCategoryRates[NCat1] = 0
+            return (VCat1 > VCat2)
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -74,10 +83,20 @@ class  MyActivityListVC: UIViewController {
         
         //Main Category
         let cell:RateListTableViewCell = self.tblRates.dequeueReusableCellWithIdentifier("RateListTableViewCell") as! RateListTableViewCell
+        let NCat1 = SelectedSubSubCategoryTitles[indexPath.row].stringByReplacingOccurrencesOfString(" ", withString: "")
         
         cell.lblCategoryTitle?.text = SelectedSubSubCategoryTitles[indexPath.row] ?? "-"
         cell.vRate?.tintColor = UIColor(red: 241/255.0, green: 196/255.0, blue: 15/255.0, alpha: 1)
         cell.vRate?.rating = 4
+        
+        cell.vRate?.rating = Double(NSUserDefaults.standardUserDefaults().floatForKey(NCat1) ?? 0)
+        
+        cell.vRate?.didFinishTouchingCosmos = { rating in
+            print("rating : \(rating)")
+            
+            NSUserDefaults.standardUserDefaults().setFloat(Float(rating), forKey: NCat1)
+            NSUserDefaults.standardUserDefaults().synchronize()
+        }
         
         //cell.lblCategoryTitle?.text = SubCategories[indexPath.row]["Title"] as? String ?? "-"
         //cell.vRate?.tintColor = UIColor(red: 241/255.0, green: 196/255.0, blue: 15/255.0, alpha: 1)

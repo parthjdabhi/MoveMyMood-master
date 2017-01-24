@@ -75,10 +75,18 @@ class RateActivitiesVC: UIViewController {
         
         //Main Category
         let cell:RateTableViewCell = self.tblRates.dequeueReusableCellWithIdentifier("RateTableViewCell") as! RateTableViewCell
+        let NCat1 = SelectedSubSubCategoryTitles[indexPath.row].stringByReplacingOccurrencesOfString(" ", withString: "")
         
         cell.lblCategoryTitle?.text = SelectedSubSubCategoryTitles[indexPath.row] ?? "-"
         cell.vRate?.tintColor = UIColor(red: 241/255.0, green: 196/255.0, blue: 15/255.0, alpha: 1)
-        cell.vRate?.rating = 0
+        cell.vRate?.rating = Double(NSUserDefaults.standardUserDefaults().floatForKey(NCat1) ?? 0)
+        
+        cell.vRate?.didFinishTouchingCosmos = { rating in
+            print("rating : \(rating)")
+            
+            NSUserDefaults.standardUserDefaults().setFloat(Float(rating), forKey: NCat1)
+            NSUserDefaults.standardUserDefaults().synchronize()
+        }
         
         //cell.listenOnVlaueChanged()
         //cell.vRate?.addTarget(self, action: Selector(self.didRatingValueChanged(cell.vRate!)), forControlEvents: UIControlEvents.ValueChanged)
